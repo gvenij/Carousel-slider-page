@@ -1,0 +1,6 @@
+@import "bourbon";
+// @include font-face("roboto", "../fonts/RobotoRegular/RobotoRegular", $file-formats: eot woff ttf);
+// @include font-face("roboto", "../fonts/RobotoBold/RobotoBold", bold, $file-formats: eot woff ttf);
+@include font-face("nerisblack", "../fonts/neris-black/Neris-Black-webfont", black, $file-formats: woff);
+@include font-face("nerissemibold", "../fonts/neris-semibold/Neris-SemiBold-webfont", semibold, $file-formats: woff);
+@include font-face("nerislight", "../fonts/neris-light/Neris-Light-webfont", light, $file-formats: woff);

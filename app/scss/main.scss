@@ -1,0 +1,181 @@
+@import 'bourbon';
+@import 'fonts';
+@import 'libs';
+@import 'vars';
+@import 'modules/carousel';
+@import 'modules/slider';
+* {
+ &,
+ &:before,
+ &:after {
+  box-sizing: border-box;
+ }
+}
+
+*::-webkit-input-placeholder {
+ color: #666666;
+ opacity: 1;
+}
+
+*:-moz-placeholder {
+ color: #666666;
+ opacity: 1;
+}
+
+*::-moz-placeholder {
+ color: #666666;
+ opacity: 1;
+}
+
+*:-ms-input-placeholder {
+ color: #666666;
+ opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+ color: #666666;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+ color: #666666;
+}
+
+html {
+ font-size: 19px;
+}
+
+html,
+body {
+ height: 100%;
+ overflow-x: hidden;
+}
+
+body {
+ min-width: 320px;
+ position: relative;
+ line-height: 1.5;
+ font-size: 1rem;
+ font-family: $default-font;
+ overflow-x: hidden;
+}
+
+img {
+ max-width: 100%;
+ height: auto;
+}
+
+h1,
+h2 {
+ margin: 1em 0 0.75em;
+ font-family: $black-font;
+ text-transform: uppercase;
+ text-align: center;
+}
+
+h1 {
+ font-size: 2.63em;
+}
+
+h2 {
+ font-size: 2.5em;
+}
+
+.top-section-bg {
+ background-color: $gray-lighter;
+ background-image: url('../img/loc.png');
+ background-repeat: no-repeat;
+ background-position: center bottom;
+}
+
+nav {
+ position: relative;
+ margin-bottom: 65px;
+ text-align: center;
+ text-transform: uppercase;
+ ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style-type: none;
+ }
+ li {
+  position: relative;
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 0 1% 10px;
+  font-family: $semibold-font;
+  cursor: pointer;
+  &.active {
+   color: $accent;
+   &:after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    top: 100%;
+    left: 15%;
+    top: 100%;
+    height: 4px;
+    background-color: $accent;
+   }
+  }
+ }
+}
+
+.accent {
+ color: $accent;
+}
+
+.pt-large {
+ padding-top: 30px;
+}
+
+p {
+ margin: 0 0 15px;
+}
+
+h4 {
+ font-size: 1.25em;
+}
+
+.content-section {
+ padding: 20px 25px 25px;
+ margin-top: 20px;
+ border-radius: 25px;
+ h4 {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0.6em;
+ }
+ p {
+  margin-bottom: 0;
+ }
+}
+
+.bb-dashed {
+ border-bottom: 1px dashed $text-color;
+}
+
+.b-dashed {
+ border: 1px dashed $gray-light;
+}
+
+.text-center {
+ text-align: center;
+}
+
+.gray {
+ color: $gray;
+}
+
+.ff-semibold {
+ font-family: $semibold-font;
+}
+
+.mb-large {
+ margin-bottom: 60px;
+}
+
+@import 'media';
